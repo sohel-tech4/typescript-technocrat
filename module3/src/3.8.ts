@@ -39,7 +39,7 @@
     // 
 
     class Shape {
-        getShape() : number{
+        getArea() : number{
             return 0
         }
     }
@@ -68,13 +68,13 @@
     }
 
     const getShapeResult = (param : Shape) =>{
-        param.getShape()
+        console.log(param.getArea())
     }
 
     const doShape = new Shape
     const doCircle = new Circle(10)
     const doSquare = new Square(10, 10)
 
-    const Result = getShapeResult(doCircle)
-    console.log(Result)
+    getShapeResult(doCircle)
+
 }
